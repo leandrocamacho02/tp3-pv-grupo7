@@ -37,7 +37,7 @@ const ListaProyectos = () => {
     <main>
       <h2>Listado de Proyectos</h2>
 
-      <section>
+      <section className="filtros from-filtros">
         <h3>Buscar Proyecto</h3>
         <input
           type="text"
@@ -47,7 +47,7 @@ const ListaProyectos = () => {
         />
       </section>
 
-      <section>
+      <section className="filtros from-filtros">
         <h3>Agregar Proyecto</h3>
         <input
           type="text"
@@ -68,17 +68,17 @@ const ListaProyectos = () => {
           <option value="En curso">En curso</option>
           <option value="Finalizado">Finalizado</option>
         </select>
-        <button onClick={handleAgregar}>Agregar</button>
+        <button className="btn-detalle" onClick={handleAgregar}>Agregar</button>
       </section>
 
-      <section>
-        <h3>Proyectos</h3>
+      <h3 style={{ textAlign: 'center', marginTop: '30px' }}>Proyectos</h3>
+      <section className="proyecto-container cards-container">
         {proyectos.map((proyecto) => (
-          <article key={proyecto.id}>
+          <article key={proyecto.id} className="card">
             <h4>{proyecto.titulo}</h4>
             <p><strong>Categoría:</strong> {proyecto.categoria}</p>
             <p><strong>Estado:</strong> {proyecto.estado}</p>
-            <button onClick={() => handleEliminar(proyecto.id)}>Eliminar</button>
+            <button className="btn-detalle" onClick={() => handleEliminar(proyecto.id)}>Eliminar</button>
           </article>
         ))}
       </section>
