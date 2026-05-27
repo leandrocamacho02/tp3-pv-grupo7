@@ -1,16 +1,18 @@
-# React + Vite
+# TRABAJO PRACTICO N° 3: Gestión de Proyectos Educativos - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto desarrollado para la materia "Programación Visual". Este trabajo consiste en la migración de una plataforma de gestión de proyectos desde una estructura estática (HTML/CSS) hacia una aplicación web dinámica utilizando **React** y **Vite**.
 
-Currently, two official plugins are available:
+## Integrantes del Grupo 7
+- Camacho Leandro Abel Ezequiel - Github: [@leandrocamacho02]
+- Miranda Facundo David - Github: [@MirandaFD0]
+- Porco Lucas Ricardo - Github: [@lucas777porco-ai]
+## Tecnologías Utilizadas
+- **React:** Librería para la construcción de interfaces de usuario.
+- **Vite:** Herramienta de compilación para un desarrollo rápido.
+- **CSS Puro:** Estilos personalizados para el layout y la interfaz.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funcionalidades Implementadas
+- **Listado Dinámico:** Renderizado de proyectos mediante el uso de `.map()`.
+- **Gestión de Estado:** Implementación de `useState` para el manejo de formularios (agregar/eliminar) y filtros de búsqueda.
+- **Integración de Servicios:** Conexión con un archivo de servicio (`proyectoservice.js`) para la lógica de datos.
+- **Layout Responsivo:** Diseño centrado, simétrico y adaptativo para una mejor experiencia de usuario.
